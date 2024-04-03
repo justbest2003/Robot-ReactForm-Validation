@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-03T12:09:30.176223" rpa="false" schemaversion="5">
+<suite id="s1" name="Reactform" source="C:\Users\justb\Desktop\Robot-ReactForm\reactform.robot">
+<test id="s1-t1" name="Check Validation FirstnameEng" line="21">
+<kw name="Open Google ReactForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:30.336806" level="INFO">Opening browser 'Chrome' to base url 'https://react-form-validation-amber.vercel.app/'.</msg>
+<arg>https://react-form-validation-amber.vercel.app/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-03T12:09:30.336806" elapsed="1.554126"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-03T12:09:31.890932" elapsed="0.122781"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:30.335774" elapsed="1.677939"/>
+</kw>
+<kw name="Input FirstnameENG">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:32.015699" level="INFO">Typing text 'สวัสดี' into text field 'name=firstnameEng'.</msg>
+<arg>name=firstnameEng</arg>
+<arg>${INPUT_FIRSTNAMEENG}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T12:09:32.014701" elapsed="0.113698"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:32.014701" elapsed="0.113698"/>
+</kw>
+<kw name="Click Element Field">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:32.129395" level="INFO">Clicking element 'xpath://input[@id='accept']'.</msg>
+<arg>xpath://input[@id='accept']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T12:09:32.129395" elapsed="0.044879"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:32.128399" elapsed="0.045875"/>
+</kw>
+<kw name="Verify FirstnameENG Results">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${RESULT_FIRSTNAMEENG}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-03T12:09:32.175272" elapsed="0.008976"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:32.191230" level="INFO">Current page contains text 'Must be in English only'.</msg>
+<arg>${RESULT_FIRSTNAMEENG}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-03T12:09:32.184248" elapsed="0.006982"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:32.175272" elapsed="0.015958"/>
+</kw>
+<doc>Test case to Check Validation FirstnameEnglish</doc>
+<status status="PASS" start="2024-04-03T12:09:30.335774" elapsed="1.855456"/>
+</test>
+<test id="s1-t2" name="Check Validation IDCard" line="28">
+<kw name="Open Google ReactForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:32.193225" level="INFO">Opening browser 'Chrome' to base url 'https://react-form-validation-amber.vercel.app/'.</msg>
+<arg>https://react-form-validation-amber.vercel.app/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-03T12:09:32.192227" elapsed="1.546822"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-03T12:09:33.739049" elapsed="0.110256"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:32.192227" elapsed="1.657078"/>
+</kw>
+<kw name="Input IDCard">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:33.850303" level="INFO">Typing text '000000000000' into text field 'name=idCard'.</msg>
+<arg>name=idCard</arg>
+<arg>${INPUT_IDCARD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T12:09:33.850303" elapsed="0.134644"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:33.849305" elapsed="0.135642"/>
+</kw>
+<kw name="Click Element Field">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:33.985940" level="INFO">Clicking element 'xpath://input[@id='accept']'.</msg>
+<arg>xpath://input[@id='accept']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T12:09:33.985940" elapsed="0.044880"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:33.984947" elapsed="0.045873"/>
+</kw>
+<kw name="Verify IDCard Results">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${RESULT_IDCARD}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-03T12:09:34.031818" elapsed="0.008974"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:34.046777" level="INFO">Current page contains text 'Must be exactly 13 characters'.</msg>
+<arg>${RESULT_IDCARD}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-03T12:09:34.040792" elapsed="0.005985"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:34.031818" elapsed="0.014959"/>
+</kw>
+<doc>Test case to Check Validation IDCard</doc>
+<status status="PASS" start="2024-04-03T12:09:32.192227" elapsed="1.854550"/>
+</test>
+<test id="s1-t3" name="Check Validation Password" line="35">
+<kw name="Open Google ReactForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:34.048772" level="INFO">Opening browser 'Chrome' to base url 'https://react-form-validation-amber.vercel.app/'.</msg>
+<arg>https://react-form-validation-amber.vercel.app/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-03T12:09:34.048772" elapsed="1.493347"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-03T12:09:35.543115" elapsed="0.124289"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:34.047774" elapsed="1.619630"/>
+</kw>
+<kw name="Input Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:35.667404" level="INFO">Typing text '1111' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${INPUT_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T12:09:35.667404" elapsed="0.096643"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:35.667404" elapsed="0.096643"/>
+</kw>
+<kw name="Click Element Field">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:35.765043" level="INFO">Clicking element 'xpath://input[@id='accept']'.</msg>
+<arg>xpath://input[@id='accept']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T12:09:35.764047" elapsed="0.041891"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:35.764047" elapsed="0.041891"/>
+</kw>
+<kw name="Verify Password Results">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${RESULT_PASSWORD}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-03T12:09:35.806931" elapsed="0.009974"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:35.822889" level="INFO">Current page contains text 'Password must be at least 8 characters'.</msg>
+<arg>${RESULT_PASSWORD}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-03T12:09:35.816905" elapsed="0.005984"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:35.806931" elapsed="0.015958"/>
+</kw>
+<doc>Test case to Check Validation Password</doc>
+<status status="PASS" start="2024-04-03T12:09:34.047774" elapsed="1.776113"/>
+</test>
+<test id="s1-t4" name="Check Validation PhoneNumber" line="42">
+<kw name="Open Google ReactForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:35.824884" level="INFO">Opening browser 'Chrome' to base url 'https://react-form-validation-amber.vercel.app/'.</msg>
+<arg>https://react-form-validation-amber.vercel.app/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-03T12:09:35.824884" elapsed="1.497281"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-03T12:09:37.323160" elapsed="0.111094"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:35.824884" elapsed="1.609370"/>
+</kw>
+<kw name="Input PhoneNumber">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:37.435249" level="INFO">Typing text '2222222' into text field 'name=mobile'.</msg>
+<arg>name=mobile</arg>
+<arg>${INPUT_PHONENUM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T12:09:37.434254" elapsed="0.115720"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:37.434254" elapsed="0.115720"/>
+</kw>
+<kw name="Click Element Field">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:37.549974" level="INFO">Clicking element 'xpath://input[@id='accept']'.</msg>
+<arg>xpath://input[@id='accept']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T12:09:37.549974" elapsed="0.037899"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:37.549974" elapsed="0.037899"/>
+</kw>
+<kw name="Verify PhoneNumber Results">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${RESULT_PHONENUM}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-03T12:09:37.587873" elapsed="0.008975"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:37.602832" level="INFO">Current page contains text 'Must be exactly 10 characters'.</msg>
+<arg>${RESULT_PHONENUM}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-03T12:09:37.597846" elapsed="0.004986"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:37.587873" elapsed="0.014959"/>
+</kw>
+<doc>Test case to Check Validation PhoneNumber</doc>
+<status status="PASS" start="2024-04-03T12:09:35.823887" elapsed="1.778945"/>
+</test>
+<test id="s1-t5" name="Check Validation Email" line="49">
+<kw name="Open Google ReactForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:37.603828" level="INFO">Opening browser 'Chrome' to base url 'https://react-form-validation-amber.vercel.app/'.</msg>
+<arg>https://react-form-validation-amber.vercel.app/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-03T12:09:37.603828" elapsed="1.484449"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-03T12:09:39.088277" elapsed="0.111998"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:37.603828" elapsed="1.597445"/>
+</kw>
+<kw name="Input Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:39.201273" level="INFO">Typing text 'test@gmail.com' into text field 'name=email'.</msg>
+<arg>name=email</arg>
+<arg>${INPUT_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T12:09:39.201273" elapsed="0.137298"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:39.201273" elapsed="0.137298"/>
+</kw>
+<kw name="Click Element Field">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:39.339569" level="INFO">Clicking element 'xpath://input[@id='accept']'.</msg>
+<arg>xpath://input[@id='accept']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T12:09:39.339569" elapsed="0.043883"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:39.339569" elapsed="0.043883"/>
+</kw>
+<kw name="Verify Email Results">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${RESULT_EMAIL}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-03T12:09:39.384449" elapsed="0.008974"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-03T12:09:39.399407" level="INFO">Current page contains text 'Email must contain specific domain name'.</msg>
+<arg>${RESULT_EMAIL}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-03T12:09:39.393423" elapsed="0.005984"/>
+</kw>
+<status status="PASS" start="2024-04-03T12:09:39.383452" elapsed="0.015955"/>
+</kw>
+<doc>Test case to Check Validation Email</doc>
+<status status="PASS" start="2024-04-03T12:09:37.603828" elapsed="1.795579"/>
+</test>
+<status status="PASS" start="2024-04-03T12:09:30.177221" elapsed="9.223184"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Reactform">Reactform</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

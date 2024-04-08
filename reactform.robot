@@ -61,6 +61,9 @@ Check Validation Email
 
 
 *** Keywords ***
+Take Screenshot
+    Capture Page Screenshot
+
 Open Google ReactForm
     Open Browser    https://react-form-validation-amber.vercel.app/    ${BROWSER}
     Maximize Browser Window

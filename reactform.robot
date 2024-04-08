@@ -58,8 +58,6 @@ Check Validation Email
     Verify Email Results
     Take Screenshot
 
-
-
 *** Keywords ***
 Take Screenshot
     Capture Page Screenshot

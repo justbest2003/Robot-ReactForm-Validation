@@ -24,6 +24,7 @@ Check Validation FirstnameEng
     Input FirstnameENG
     Click Element Field
     Verify FirstnameENG Results
+    Take Screenshot
 
 Check Validation IDCard
     [Documentation]    Test case to Check Validation IDCard
@@ -31,6 +32,7 @@ Check Validation IDCard
     Input IDCard
     Click Element Field
     Verify IDCard Results
+    Take Screenshot
 
 Check Validation Password
     [Documentation]    Test case to Check Validation Password
@@ -38,6 +40,7 @@ Check Validation Password
     Input Password
     Click Element Field
     Verify Password Results
+    Take Screenshot
 
 Check Validation PhoneNumber
     [Documentation]    Test case to Check Validation PhoneNumber
@@ -45,6 +48,7 @@ Check Validation PhoneNumber
     Input PhoneNumber
     Click Element Field
     Verify PhoneNumber Results
+    Take Screenshot
 
 Check Validation Email
     [Documentation]    Test case to Check Validation Email
@@ -52,6 +56,7 @@ Check Validation Email
     Input Email
     Click Element Field
     Verify Email Results
+    Take Screenshot
 
 
 
